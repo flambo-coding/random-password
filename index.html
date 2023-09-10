@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+    <title>Random Password</title>
+    <style>*{font-family: 'Poppins', sans-serif;}</style>
+</head>
+<body class="w-full h-screen sm:flex sm:justify-center sm:items-center sm:bg-[#4A43FC]">
+    <div class="w-full h-screen flex flex-col items-center justify-center gap-7 bg-[#4A43FC] sm:w-[25rem] sm:h-[20rem] sm:rounded-xl
+       sm:bg-white">
+        <h1 class="font-bold text-[26px] text-center text-white sm:text-[#5e58fe]">Random Password <br> Generater</h1>
+        <input type="text" placeholder="Password" class="border-[2px] outline-none px-3 py-2 rounded-lg shadow-lg w-[250px] sm:w-[280px] sm:shadow-sm" readonly>
+        <div class="flex flex-row justify-between w-[250px] sm:w-[280px]">
+            <p class="bg-[#5e58fe] text-white px-4 py-2 rounded-sm shadow-lg cursor-pointer" id="generate" onclick="generatePassword()">Generate</p>
+            <p class="bg-[#5e58fe] text-white px-4 py-2 rounded-sm  shadow-lg cursor-pointer" id="copy" onclick="copyPassword()">Copy</p>
+        </div>
+    </div>
+    
+</body>
+</html>
